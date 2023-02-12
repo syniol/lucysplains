@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  golang:
+    image: golang:1.19-alpine
+    container_name: lucysplains_go
+    tty: true
+    volumes:
+      - ../:/var/local/lucysplains
+    working_dir: /var/local/lucysplains
