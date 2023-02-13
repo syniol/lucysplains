@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3"
 services:
   golang:
     image: golang:1.19-alpine
@@ -6,4 +6,6 @@ services:
     tty: true
     volumes:
       - ../:/var/local/lucysplains
+    environment:
+      OPEN_AI_KEY: "YOUR_API_KEY_FROM_OPENAI_HERE"
     working_dir: /var/local/lucysplains
